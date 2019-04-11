@@ -1,0 +1,9 @@
+<p><a href="/students/<%=@student.id%>/edit">Update details</a></p>
+<h1>Name: <%=@student.first_name%> <%=@student.second_name%></h1>
+<h1>Age: <%=@student.age%></h1>
+<h1>House: <%=@house.name%> </h1>
+<img src="<%=@house.logo%>" alt="<%=@house.name%> logo">
+
+<form action="/students/<%=@student.id%>/delete" method="post">
+  <input type="submit" value="Delete This Student">
+</form>
